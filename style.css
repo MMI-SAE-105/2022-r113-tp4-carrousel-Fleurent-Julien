@@ -1,9 +1,3 @@
-/* en vrac :
-100% 100% 100% 0 auto border-box box-sizing 
-display height flex flex none margin 
-max-width width width
-*/
-
 * {
     /* change le box model */
     box-sizing: border-box;
@@ -24,6 +18,11 @@ img {
     /* largeur du parent */
     width: 100%;
 
+    /* permet de scroller horizontalement */
+    overflow-x: scroll;
+
+    /* animation de défilement */
+    scroll-behavior: smooth;
 }
 
 .carrousel_ecran {
@@ -31,7 +30,7 @@ img {
     width: 100%;
 
     /* permet de garder toute la largeur du parent */
-    width: 100%;
+    flex: none;
 }
 
 .carrousel_ecran figure {
